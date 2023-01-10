@@ -18,7 +18,7 @@ app.use(async(ctx, next) =>
     console.log('[logger middleware] after await...')
 
     const ms = new Date() - start
-    console.log('${ctx.method} ${ctx.url} - ${ms}ms')
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
 // 响应
